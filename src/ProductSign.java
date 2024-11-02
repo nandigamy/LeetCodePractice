@@ -5,16 +5,16 @@ public class ProductSign {
     public static int arraySign(int[] nums) {
 
 
-      int nCount=0;
+      boolean isPositive=true;
         for ( int n: nums) {
 
             if (n == 0) {
                 return 0;
             } else if (n <0) {
-                nCount++;
+                isPositive=!isPositive;
             }
         }
-            if(nCount%2==0){
+            if(isPositive){
                 return 1;
             }
             else{
