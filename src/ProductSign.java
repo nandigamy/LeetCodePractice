@@ -4,15 +4,13 @@ public class ProductSign {
 
     public static int arraySign(int[] nums) {
 
-      int pCount=0;
+
       int nCount=0;
         for ( int n: nums) {
 
             if (n == 0) {
                 return 0;
-            } else if (n >= 1) {
-                pCount++;
-            } else {
+            } else if (n <0) {
                 nCount++;
             }
         }
